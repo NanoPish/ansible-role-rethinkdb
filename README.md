@@ -17,20 +17,20 @@ Available variables are listed below :
 
 Directory to store data and metadata.
 
-  rethinkdb_bind : all
+  rethinkdb_bind : all  
 
 Address of local interfaces to listen on when accepting connections
 May be 'all' or an IP address, loopback addresses are enabled by default
 Default: all local addresses
 
 
- `rethinkdb_joins:
- 	- ip: 10.0.0.43
-	  port: 29015
-	- ip: 10.0.0.125
-	  port: 29015`
+ `rethinkdb_joins:  
+ 	- ip: 10.0.0.1
+	  port: 29015  
+	- ip: 10.0.0.2
+	  port: 29015  `
 
-Array of host and port to connect to. (Cluster)
+Array of host and transport to connect to. (Cluster)
 
   rethinkdb_cache_size: 1024
 
