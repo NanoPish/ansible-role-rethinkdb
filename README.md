@@ -19,15 +19,15 @@ Directory to store data and metadata.
 
   rethinkdb_bind : all
 
-Address of local interfaces to listen on when accepting connections                                                                                                                                     │ gt_belin_front.yml
-May be 'all' or an IP address, loopback addresses are enabled by default                                                                                                                                │ gt_belin_fro..date_nodejs.yml
+Address of local interfaces to listen on when accepting connections
+May be 'all' or an IP address, loopback addresses are enabled by default
 Default: all local addresses
 
 
- rethinkdb_joins:                                                                                                                                                                                     │ gt_cengage_bastion.yml
-    - ip: 10.0.0.43                                                                                                                                                                                    │ gt_cengage_rethinkdb.yml
-      port: 29015                                                                                                                                                                                      │ gt_creo_conv.yml
-    - ip: 10.0.0.125                                                                                                                                                                                   │ gt_history.yml
+ rethinkdb_joins:
+    - ip: 10.0.0.43
+      port: 29015
+    - ip: 10.0.0.125
       port: 29015
 
 Array of host and port to connect to. (Cluster)
@@ -52,7 +52,7 @@ Example Playbook
       roles:
          - gpkfr.rethinkdb
       
-      vars:                                                                                                                                                                                                        │ gt_belin_pre..d_rethinkdb.yml
+      vars:
         rethinkdb_bind: all
 
 License
