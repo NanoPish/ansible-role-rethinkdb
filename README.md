@@ -23,12 +23,11 @@ Address of local interfaces to listen on when accepting connections
 May be 'all' or an IP address, loopback addresses are enabled by default
 Default: all local addresses
 
-
- `rethinkdb_joins:  
- 	- ip: 10.0.0.1
-	  port: 29015  
-	- ip: 10.0.0.2
-	  port: 29015  `
+	rethinkdb_joins:  
+ 	  - ip: 10.0.0.1
+	    port: 29015
+	  - ip: 10.0.0.2
+	    port: 29015
 
 Array of host and transport to connect to. (Cluster)
 
