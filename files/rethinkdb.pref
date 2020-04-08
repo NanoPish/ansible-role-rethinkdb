@@ -1,0 +1,3 @@
+Package: rethinkdb
+Pin: release a=now
+Pin-Priority: 1001

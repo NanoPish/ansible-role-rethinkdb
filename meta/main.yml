@@ -1,0 +1,17 @@
+galaxy_info:
+  author: gpkfr
+  description: Rethinkdb Server for Gnu/Debian 10
+  company: ImelBox
+  license: license (BSD, MIT)
+
+  min_ansible_version: 2.9
+
+  platforms:
+    - name: Debian
+      versions:
+        - 10
+
+  galaxy_tags:
+    - rethinkdb
+    - debian
+

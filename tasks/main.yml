@@ -1,0 +1,29 @@
+---
+# tasks file for rethinkdb
+- name: add rethinkdb public key
+  apt_key:
+    url: https://download.rethinkdb.com/apt/pubkey.gpg
+    state: present
+
+- name: Add rethinkdb repository
+  apt_repository:
+    repo: "deb http://download.rethinkdb.com/apt {{ ansible_distribution_release}} main"
+    state: present
+
+- name: add Rethinkdb package
+  apt:
+    name: rethinkdb={{ rethinkdb_version }}
+    state: present
+
+- name: create instance1
+  template:
+    dest: /etc/rethinkdb/instances.d/instance1.conf
+    src: default.conf.j2
+  notify: restart rethinkdb
+
+- name: Hold RDB current version
+  copy:
+    src: files/rethinkdb.pref
+    dest: /etc/apt/preferences.d/rethinkdb.pref
+
+
