@@ -24,11 +24,11 @@ May be 'all' or an IP address, loopback addresses are enabled by default        
 Default: all local addresses
 
 
- `rethinkdb_joins:                                                                                                                                                                                     │ gt_cengage_bastion.yml
+ rethinkdb_joins:                                                                                                                                                                                     │ gt_cengage_bastion.yml
     - ip: 10.0.0.43                                                                                                                                                                                    │ gt_cengage_rethinkdb.yml
       port: 29015                                                                                                                                                                                      │ gt_creo_conv.yml
     - ip: 10.0.0.125                                                                                                                                                                                   │ gt_history.yml
-      port: 29015`
+      port: 29015
 
 Array of host and port to connect to. (Cluster)
 
@@ -50,7 +50,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - rethinkdb
+         - gpkfr.rethinkdb
       
       vars:                                                                                                                                                                                                        │ gt_belin_pre..d_rethinkdb.yml
         rethinkdb_bind: all
