@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: rethinkdb
   author: gpkfr
   description: Rethinkdb Server for Gnu/Debian 10
   company: ImelBox
