@@ -2,12 +2,12 @@
 # tasks file for rethinkdb
 - name: add rethinkdb public key
   apt_key:
-    url: https://download.rethinkdb.com/apt/pubkey.gpg
+    url: https://download.rethinkdb.com/repository/raw/pubkey.gpg
     state: present
 
 - name: Add rethinkdb repository
   apt_repository:
-    repo: "deb http://download.rethinkdb.com/apt {{ ansible_distribution_release}} main"
+    repo: "deb https://download.rethinkdb.com/repository/debian-{{ ansible_distribution_release }} debian-{{ ansible_distribution_release }} main"
     state: present
 
 - name: add Rethinkdb package
