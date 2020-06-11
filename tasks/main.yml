@@ -7,7 +7,7 @@
 
 - name: Add rethinkdb repository
   apt_repository:
-    repo: "deb https://download.rethinkdb.com/repository/debian-{{ ansible_distribution_release }} debian-{{ ansible_distribution_release }} main"
+    repo: "deb https://download.rethinkdb.com/repository/debian-{{ ansible_distribution_release }} {{ ansible_distribution_release }} main"
     state: present
 
 - name: add Rethinkdb package
