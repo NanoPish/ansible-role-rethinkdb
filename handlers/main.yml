@@ -5,4 +5,3 @@
     name: rethinkdb
     state: restarted
     enabled: yes
-

@@ -25,5 +25,3 @@
   copy:
     src: files/rethinkdb.pref
     dest: /etc/apt/preferences.d/rethinkdb.pref
-
-
