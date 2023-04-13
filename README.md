@@ -1,12 +1,12 @@
 Ansible Role: Rethinkdb
 =========
 
-install and configure [Rethinkdb](https://rethinkdb.com) server (or in cluster) On GNU/Debian 10.
+install and configure [Rethinkdb](https://rethinkdb.com) server (or in cluster) On GNU/Debian 11 / Ubuntu 22.
 
 Requirements
 ------------
 
-Compatible with Debian 10. `sudo`, `ca-certificates` and `apt-transport-https`must be available on the server.
+Compatible with Debian 11. `sudo`, `ca-certificates` and `apt-transport-https`must be available on the server.
 
 Role Variables
 --------------
@@ -49,7 +49,7 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - gpkfr.rethinkdb
+         - .rethinkdb
       
       vars:
         rethinkdb_bind: all

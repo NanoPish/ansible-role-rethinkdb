@@ -1,7 +1,7 @@
 galaxy_info:
   role_name: rethinkdb
   author: gpkfr
-  description: Rethinkdb Server for Gnu/Debian 10
+  description: Rethinkdb Server for Gnu/Debian 11 / Ubuntu 22
   company: ImelBox
   license: license (BSD, MIT)
 
