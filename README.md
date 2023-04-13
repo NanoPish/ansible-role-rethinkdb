@@ -1,12 +1,12 @@
 Ansible Role: Rethinkdb
 =========
 
-install and configure [Rethinkdb](https://rethinkdb.com) server (or in cluster) On GNU/Debian 11 / Ubuntu 22.
+install and configure [Rethinkdb](https://rethinkdb.com) server (or in cluster) on Ubuntu 22.
 
 Requirements
 ------------
 
-Compatible with Debian 11. `sudo`, `ca-certificates` and `apt-transport-https`must be available on the server.
+Compatible with Ubuntu 22. `sudo`, `ca-certificates` and `apt-transport-https`must be available on the server.
 
 Role Variables
 --------------

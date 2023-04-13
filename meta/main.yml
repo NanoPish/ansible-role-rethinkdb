@@ -1,17 +1,17 @@
 galaxy_info:
   role_name: rethinkdb
   author: gpkfr
-  description: Rethinkdb Server for Gnu/Debian 11 / Ubuntu 22
+  description: Rethinkdb Server for Ubuntu 22
   company: ImelBox
   license: license (BSD, MIT)
 
   min_ansible_version: 2.9
 
   platforms:
-    - name: Debian
+    - name: Ubuntu
       versions:
-        - buster
+        - 22
 
   galaxy_tags:
     - rethinkdb
-    - debian
+    - ubuntu
