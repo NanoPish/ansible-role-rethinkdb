@@ -86,6 +86,9 @@ join={{ rethinkdb_join.ip }}:{{ rethinkdb_join.port}}
 ## Port for the http admin console
 ## Default: 8080 + port-offset
 # http-port=8080
+{% if rethinkdb_http_port is defined %}
+rethinkdb_http_port
+{% endif %}
 
 ## Disable web administration console
 # no-http-admin
